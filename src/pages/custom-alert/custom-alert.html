@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <ion-content [style.height]="contentsHeight + 'px'">
+        <figure class="{{filterClass}}" id="mainImageContainer" [style.height]="imageHeight + 'px'">
+            <img class="mainImage" src="{{imageURL}}" />
+        </figure>
+        <button ion-button 
+                full 
+                style="margin:0px;" 
+                id="closeAlert"
+                color="{{buttonColor}}"
+                (click)="dismiss()" 
+        >Close alert</button>
+    </ion-content>    
+</div>
+
